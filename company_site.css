@@ -46,7 +46,7 @@ main {
 h2 {
   font-size: 36px;
   font-weight: bold;
-  padding: 0 0 37px 0;
+  padding: 0 0 36px 0;
 }
 
 h2:before, h2:after {
@@ -63,14 +63,31 @@ h2:before, h2:after {
 }
 
 h3 {
-  padding: 9px 0 0 0;
+  padding: 0px 0 14px 0;
   font-weight: bold;
   color: #3e59b2;
   font-size: 24px;
 }
 
 article p {
-  padding: 19px 125px 115px 125px;
+  padding: 10px 125px 115px 125px;
+}
+
+#team li {
+  display: inline-block;
+  width: 140px;
+  height: 152px;
+  padding: 0 29px;
+}
+
+#team figcaption {
+  color: #3e59b2;
+  font-size: 24px;
+  padding: 32px 0 0 0;
+}
+
+#team ul {
+  padding: 20px 0 160px;
 }
 
 footer {
