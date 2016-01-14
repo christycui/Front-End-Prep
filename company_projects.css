@@ -13,8 +13,46 @@ header {
   background: #2f2840 url("../HTML, CSS & jQuery/company_site/images/bg_body.gif") repeat;
 }
 
+
+.column {
+  padding: 0 0 10px 0;
+}
+
+p {
+  width: 65%;
+  margin: auto;
+  padding: 0 0 128px 0;
+}
+
 h1 {
   padding: 105px 0 128px 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0 0 37px 0;
+}
+
+h2:before, h2:after {
+  display: inline;
+  padding: 0 24px;
+  content: "\2022";
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.column figure {
+  padding: 12px 0 0 0;
+  width: 83%;
+  margin: auto;
+}
+
+h3 {
+  padding: 49px 0 18px 0;
+  font-weight: bold;
+  color: #3e59b2;
+  font-size: 24px;
 }
 
 nav ul li {
