@@ -62,6 +62,10 @@ h2:before, h2:after {
   display: block;
 }
 
+#projects figure img {
+  width: 100%;
+}
+
 h3 {
   padding: 0px 0 14px 0;
   font-weight: bold;
@@ -138,21 +142,44 @@ footer li a.instagram {
   }
 
   #team li img {
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
 }
 
+/* tablet */
 @media (max-width: 768px) {
-  main {
-    padding: 80px 0 0 0;
+  header {
+    height: 340px
   }
 
-  #home {
+  header h1 {
+    padding: 65px 0 32px 0;
+  }
+
+  header h1 img {
+    width: 223px;
+    height: 182px;
+  }
+
+  main {
+    padding: 77px 0 0 0;
+  }
+
+  main div {
     padding: 0 40px;
   }
 
   article p {
   padding: 10px 0 115px 0;
   text-align: justify;
-}
+  }
+
+  footer {
+    padding: 60px 0 40px 0;
+  }
+
+  footer ul li {
+    padding: 0 34px;
+    margin: 0 0;
+  }
 }
