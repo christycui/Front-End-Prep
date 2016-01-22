@@ -76,7 +76,6 @@ article p {
 #team li {
   display: inline-block;
   width: 140px;
-  height: 152px;
   padding: 0 29px;
 }
 
@@ -138,7 +137,7 @@ footer li a.instagram {
     padding: 0 0 30px 0;
   }
 
-  #team img {
+  #team li img {
     margin: 0 auto;
   }
 }
