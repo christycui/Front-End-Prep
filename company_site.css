@@ -17,6 +17,14 @@ h1 {
   padding: 105px 0 128px 0;
 }
 
+h1 a {
+  display: inline-block;
+  text-indent: -99999px;
+  width: 298px;
+  height: 243px;
+  background: transparent url("../HTML, CSS & jQuery/company_site/images/logo.png") 0 0 no-repeat;
+}
+
 nav ul li {
   display: inline;
   padding: 0 37.5px;
@@ -146,7 +154,7 @@ footer li a.instagram {
   }
 }
 
-/* tablet */
+/* tablet version */
 @media (max-width: 768px) {
   header {
     height: 340px
@@ -156,9 +164,10 @@ footer li a.instagram {
     padding: 65px 0 32px 0;
   }
 
-  header h1 img {
+  header h1 a {
     width: 223px;
     height: 182px;
+    background-size: cover;
   }
 
   main {
@@ -181,5 +190,84 @@ footer li a.instagram {
   footer ul li {
     padding: 0 34px;
     margin: 0 0;
+  }
+}
+
+/* mobile version */
+@media (max-width: 517px) {
+  body {
+    font-size: 16px;
+  }
+
+  header{
+    height: 126px;
+  }
+
+  header h1 {
+    padding: 34px 0 0 21px;
+    float: left;
+    font-size: 20px
+  }
+
+  header h1 a {
+    width: auto;
+    height: 42px;
+    text-indent: 0px;
+    background-size: 90px auto;
+    background-position: -20px 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 0 0 55px;
+  }
+
+  nav {
+    text-align: right;
+    padding: 10px 20px 0 0;
+  }
+
+  nav ul li {
+    padding: 6px 0;
+    display: block;
+  }
+
+  nav ul a {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 26px;
+    padding-bottom: 32px;
+  }
+
+  h2:before, h2:after {
+    vertical-align: 0;
+  }
+
+  main {
+    padding: 68px 0 0 0;
+  }
+
+  article p {
+    padding-bottom: 70px;
+  }
+
+  footer {
+    padding: 38px 40px 26px 40px;
+  }
+
+  footer ul li {
+    padding: 0 12px;
+    margin: 0 0;
+  }
+
+  footer p {
+    padding: 0 0 60px 0;
+    font-size: 16px;
+  }
+
+  #team ul {
+    margin-top: -20px;
+    padding: 0 0 70px 0;
   }
 }
