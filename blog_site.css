@@ -21,8 +21,12 @@ header a {
 header h1 {
   font: normal 48px "Myrlad Pro";
   letter-spacing: 20px;
-  padding-bottom: 270px;
-  background: transparent url("../HTML, CSS & jQuery/blog_designs/logo.png") center 102px no-repeat;
+  padding-bottom: 140px;
+  background: transparent url("../HTML, CSS & jQuery/blog_designs/logo.png") center bottom no-repeat;
+}
+
+header ul {
+  padding-top: 140px;
 }
 
 header ul li {
@@ -190,4 +194,92 @@ fieldset {
 
 input[type='textarea'] {
   height: 140px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 50px 0 20px 0;
+  }
+
+  header h1 {
+    padding-bottom: 100px;
+  }
+
+  header ul {
+    padding-top: 100px;
+  }
+
+  .content h2 {
+    font-size: 26px;
+  }
+
+  .content article h2 {
+    padding-bottom: 26px;
+  }
+
+  .content p {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content, .sidebar {
+    width: auto;
+    padding: 0 30px;
+  }
+
+  .sidebar nav, .sidebar div {
+    width: 50%;
+    float: left;
+  }
+
+  .sidebar {
+    padding: 30px;
+  }
+
+  .sidebar nav ul {
+    padding-bottom: 0px;
+  }
+
+  .sidebar ul li {
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 50px 0 10px 0;
+  }
+
+  header h1 {
+    padding-bottom: 90px;
+    letter-spacing: 10px;
+    background-size: 90% auto;
+  }
+
+  header ul {
+    padding-top: 80px;
+  }
+
+  header nav li {
+    width: 49%;
+    padding: 10px 0;
+  }
+
+  .sidebar {
+    background: transparent;
+  }
+
+  .sidebar nav, .sidebar div {
+    background: #f6f7f8;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .sidebar h3 {
+    padding-bottom: 20px;
+
+  }
 }
