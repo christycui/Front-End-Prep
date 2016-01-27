@@ -97,18 +97,26 @@ main:after {
   color: inherit;
 }
 
-.content article {
+.content article, section {
   padding-bottom: 58px;
 }
 
-.content h2 {
+.content article h2 {
   padding-bottom: 33px;
 }
 
-.content h2 a {
+.content section h2 {
+  padding-bottom: 20px;
+}
+
+.content h2 {
   font-size: 36px;
-  text-decoration: none;
+}
+
+.content h2 a {
+  font-size: inherit;
   color: inherit;
+  text-decoration: inherit;
 }
 
 .content h2 a:hover {
@@ -124,19 +132,21 @@ main:after {
   text-decoration: none;
 }
 
-.pagination a.button {
-  background: #d2d5da;
+.button {
+  background: #50c3af;
   border-radius: 20px;
   border: 0px none;
   color: white;
+  cursor: pointer;
   font: normal 14px "PT Sans", sans-serif;
   padding: 10px 33px;
   margin-right: 26px;
   text-decoration: none;
 }
 
-.pagination a.button.active {
-  background: #50c3af;
+.button.deactivated {
+  background: #d2d5da;
+  cursor: none;
 }
 
 footer {
@@ -145,4 +155,39 @@ footer {
   border-top-color: #d0d0d0;
   padding: 18px 0 56px 0;
   font: normal 12px Helvetica, Arial, sans-serif;
+}
+
+.content p.author {
+  margin: 0 0 27px 0; 
+  padding: 10px 53px;
+}
+
+.comments img {
+  border-radius: 100%;
+  float: left;
+}
+
+form dt{
+  padding: 0 0 5px 0;
+  font-weight: bold;
+}
+
+form dd {
+  padding-bottom: 20px;
+}
+
+input[type='text'], input[type='textarea'] {
+  width: 100%;
+  height: 40px;
+  font: normal 15px Helvetica, Arial, sans-serif;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  padding-bottom: 10px;
+}
+
+input[type='textarea'] {
+  height: 140px;
 }
