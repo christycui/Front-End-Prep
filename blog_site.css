@@ -1,0 +1,148 @@
+@import url('whitespace-reset.css');
+
+body {
+  font: normal 20px Avenir, sans-serif;
+  text-align: justify;
+}
+
+header {
+  background: #3d3d3d;
+  text-align: center;
+  margin: 0 auto;
+  padding: 148px 0 44px 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header h1 {
+  font: normal 48px "Myrlad Pro";
+  letter-spacing: 20px;
+  padding-bottom: 270px;
+  background: transparent url("../HTML, CSS & jQuery/blog_designs/logo.png") center 102px no-repeat;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+header nav a.selected {
+  color: #50c3af;
+}
+
+main, footer {
+  max-width: 998px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 88px 0 93px 0;
+}
+
+main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content {
+  width: 67%;
+  float: left;
+  padding-right: 9%;
+}
+
+.sidebar {
+  width: 24%;
+  float: left;
+  background: #f6f7f8;
+  padding: 37px;
+  box-sizing: border-box;
+  font: normal 14px "PT Sans", sans-serif;
+}
+
+.sidebar, footer {
+  color: #787b80;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+
+.sidebar nav ul {
+  list-style: url("../HTML, CSS & jQuery/blog_designs/bullet.png");
+  padding: 0 0 122px 20px;
+}
+
+.sidebar nav li {
+  padding: 6px;
+}
+
+.sidebar li:nth-of-type(4n+1) {
+  padding-top: 0px;
+}
+
+.sidebar li:nth-of-type(4n+4) {
+  padding-bottom: 0px;
+}
+
+.sidebar nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content article {
+  padding-bottom: 58px;
+}
+
+.content h2 {
+  padding-bottom: 33px;
+}
+
+.content h2 a {
+  font-size: 36px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content h2 a:hover {
+  color: #50c3af;
+}
+
+.content p {
+  padding-bottom: 40px;
+}
+
+.content p a {
+  color: #50c3af;
+  text-decoration: none;
+}
+
+.pagination a.button {
+  background: #d2d5da;
+  border-radius: 20px;
+  border: 0px none;
+  color: white;
+  font: normal 14px "PT Sans", sans-serif;
+  padding: 10px 33px;
+  margin-right: 26px;
+  text-decoration: none;
+}
+
+.pagination a.button.active {
+  background: #50c3af;
+}
+
+footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #d0d0d0;
+  padding: 18px 0 56px 0;
+  font: normal 12px Helvetica, Arial, sans-serif;
+}
