@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>JQuery Event Exercise</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+    $(function() {
+      $('form').on('submit', function(e){
+        e.preventDefault();
+        var key = $('#key').val().charCodeAt(0);
+
+        $(document).off('keypress').on('keypress', function(e){
+          if (e.which == key) { $('a').trigger('click'); }
+        });
+      });
+      $('a').click(function(e){
+        e.preventDefault();
+        $('#accordion').slideToggle();
+      });
+    });
+    </script>
+  </head>
+  <body>
+    <form action='' method='get'>
+      <fieldset>
+        <input type='text' maxlength=1 id='key'/>
+        <input type='submit' value='Set'>  
+      </fieldset>
+    </form>
+    <a href='#'>Toggle Accordion</a>
+    <div id='accordion'>
+      <p>I am an example paragraph.</p>
+    </div>
+  </body>
+</html> 
