@@ -4,6 +4,23 @@
     <title>Space Design | Home</title>
     <meta charset="UTF-8" />
     <link rel='stylesheet' href='company_site.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#team li a").on("click", function(e) {
+          e.preventDefault();
+          $(this).siblings(".modal").css({
+            top: $(window).scrollTop() + 30
+          });
+          $(this).nextAll("div").fadeIn(400);
+        });
+
+        $(".modal_layer, a.close").on("click", function(e) {
+          e.preventDefault();
+          $(".modal, .modal_layer").fadeOut(400);
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -30,21 +47,49 @@
               <image src='../HTML, CSS & jQuery/company_site/images/img_kevin.jpg' alt='kevin'>
               Kevin
             </a>
+            <div class='modal'>
+              <a href='#' class='close'></a>
+              <image src='../HTML, CSS & jQuery/company_site/images/img_kevin.jpg' alt='kevin'>
+              <h3>Kevin</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class='modal_layer'></div>
           <li>
             <a href=''>
-              <image src='../HTML, CSS & jQuery/company_site/images/img_louis.jpg' alt='loius'>
+              <image src='../HTML, CSS & jQuery/company_site/images/img_louis.jpg' alt='louis'>
               Louis
             </a>
+            <div class='modal'>
+              <a href='#' class='close'></a>
+              <image src='../HTML, CSS & jQuery/company_site/images/img_louis.jpg' alt='louis'>
+              <h3>Louis</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class='modal_layer'></div>
           <li>
             <a href=''>
               <image src='../HTML, CSS & jQuery/company_site/images/img_kasper.jpg' alt='kasper'>
               Kasper
             </a>
+            <div class='modal'>
+              <a href='#' class='close'></a>
+              <image src='../HTML, CSS & jQuery/company_site/images/img_kasper.jpg' alt='kasper'>
+              <h3>Kasper</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class='modal_layer'></div>
           <li>
             <a href=''>
               <image src='../HTML, CSS & jQuery/company_site/images/img_chris.jpg' alt='chris'>
               Chris
             </a>
+            <div class='modal'>
+              <a href='#' class='close'></a>
+              <image src='../HTML, CSS & jQuery/company_site/images/img_chris.jpg' alt='chris'>
+              <h3>Chris</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class='modal_layer'></div>
         </ul>
       </div>
     </main>

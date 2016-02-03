@@ -143,6 +143,59 @@ footer li a.instagram {
   background-position: 0 100%;
 }
 
+/* modal */
+.modal {
+  display: none;
+  position: absolute;
+  top: 100px;
+  width: 660px;
+  padding: 125px 70px 70px 70px;
+  background: white;
+  text-align: left;
+  left: 50%;
+  margin-left: -400px;
+  z-index: 3;
+}
+
+.modal img {
+  float: left;
+  width: 96px;
+}
+
+.modal h3 {
+  float: left;
+  padding: 30px;
+  height: 104px;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+.modal p {
+  clear: both;
+  font-size: 20px;
+}
+
+.modal a.close {
+  background: transparent url('../HTML, CSS & jQuery/icon_close.png') no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  width: 32px;
+  padding-top: 0 !important;
+}
+
+.modal_layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .3);
+}
+
 @media (max-width: 875px) {
   #team li {
     width: 48%;
@@ -190,6 +243,13 @@ footer li a.instagram {
   footer ul li {
     padding: 0 34px;
     margin: 0 0;
+  }
+
+  .modal {
+    left: 0;
+    width: auto;
+    margin: 0;
+    padding: 50px 30px 50px 30px;
   }
 }
 
